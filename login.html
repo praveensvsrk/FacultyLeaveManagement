@@ -1,0 +1,58 @@
+<html>
+
+<head>
+
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/theme.css" rel="stylesheet" />
+  <title>
+    Login | Faculty Leave Tracking
+  </title>
+</head>
+
+<body class="fl-theme-k1">
+
+  <div class="fl-container">
+    <div class="fl-container fl-center fl-padding-32">
+      <header>
+        <center>
+          <h2>Faculty Leave Tracking system</h2></center>
+      </header>
+    </div>
+    <noscript>This website uses javascript, Please Enable it in your browser</noscript>
+    <center><button onclick="document.getElementById('login_card').style.display='block'; this.style.display='none';" style="margin-bottom:32px;" class="fl-animate-opacity fl-btn fl-round fl-padding-large fl-ripple fl-hover-red fl-xlarge">Login</button></center>
+    <center>
+      <!--<div id="login_card" class="fl-modal">-->
+      <!--<div class="fl-modal-content fl-card-8 fl-animate-zoom" style="max-width:600px">-->
+      <div id="login_card" class="fl-card-8 f-theme-l5 fl-animate-zoom" style="display:none; max-width:600px">
+        <!--<div class="fl-center"><br>
+        <span onclick="document.getElementById('login_card').style.display='none'" class="fl-closebtn fl-hover-red fl-container fl-display-topright" title="Close">&times;</span>-->
+        <!--589ba4<img src="images/avatar.png" alt="Avatar" style="width:30%" class="fl-circle fl-margin-top"/>
+      </div>-->
+
+        <form id='login' name='login' class="fl-container " action="login.php" method="post">
+          <div class="fl-section">
+            <label class="fl-left"><b>Username</b></label>
+            <input class="fl-input fl-border fl-margin-bottom" type="text" placeholder="Enter Username" name="usr" required>
+            <label class="fl-left"><b>Password</b></label>
+            <input class="fl-input fl-border" type="password" placeholder="Enter Password" name="pwd" required>
+            <button style="color:#ffff;" class="fl-btn-block fl-ripple fl-section fl-padding fl-theme-d5" type="submit">Submit</button>
+            <input class="fl-left fl-check fl-margin-top" type="checkbox" checked="checked">
+            <p class="fl-left">Remember me</p>
+          </div>
+        </form>
+
+        <div class="fl-container fl-border-top fl-padding-16 fl-theme-d1">
+          <!--<button onclick="document.getElementById('login_card').style.display='none'" type="button" class="fl-btn fl-red">Cancel</button>-->
+          <button onclick="document.forms['login'].reset()" type="button" class="fl-left fl-ripple fl-btn fl-red">Reset</button>
+          <span class="fl-right fl-padding fl-hide-small">Forgot <a href="#">password?</a></span>
+        </div>
+
+      </div>
+  </div>
+  </center>
+  <!--</div>-->
+
+
+</body>
+
+</html>
